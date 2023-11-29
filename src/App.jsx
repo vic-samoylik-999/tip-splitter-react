@@ -10,7 +10,7 @@ function App() {
           <Header />
           <main className="card">
             <Column>left</Column>
-            <Column bg="dark-cyan">right</Column>
+            <Column bg="contrast">right</Column>
           </main>
         </div>
       </div>
