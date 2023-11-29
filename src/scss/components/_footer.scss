@@ -1,0 +1,45 @@
+.footer {
+    display: flex;
+    align-items: center;
+    background-color: var(--very-light-grayish-cyan);
+    height: 3vh;
+    font-size: 12px;
+    &__container {
+        max-width: 934px;
+        padding: 0 20px 0 0;
+        text-align: right;
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+    }
+    &__icon {
+        img {
+            width: 14px;
+            height: 14px;
+            transform: translateY(2px);
+            animation: pulse 3s linear infinite;
+        }
+    }
+    &__link {
+        text-decoration: none;
+        color: var(--very-dark-cyan);
+        transition: .3s ease;
+        &:hover {
+            color: var(--strong-cyan);
+            transition: .3s ease;
+        }
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
