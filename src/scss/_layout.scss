@@ -10,4 +10,15 @@
 .container {
     max-width: 934px;
     padding: 0 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    column-gap: 48px;
+    background-color: white;
+    border-radius: 12px;
+    padding: 32px 32px 32px 48px;
 }
