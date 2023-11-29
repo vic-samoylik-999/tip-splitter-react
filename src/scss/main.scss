@@ -16,3 +16,81 @@ body {
     color: var(--dark-greyish-cyan);
 }
 
+h1 {
+    font-size: 24px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--dark-greyish-cyan)
+}
+
+h2 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+input {
+    outline: none;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: inherit;
+    color: var(--very-dark-cyan);
+    background-color: var(--very-light-grayish-cyan);
+    border: 3px solid transparent;
+    transition: .4s ease;
+}
+
+input:focus {
+    border-color: var(--strong-cyan);
+    transition: .4s ease;
+}
+
+input:out-of-range {
+    transition: .4s ease;
+    border-color: #D38E82;
+}
+
+/* Hiding the arrows of input number */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+button {
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    overflow: visible;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    line-height: normal;
+    font-size: 24px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+button:hover,
+button.active:hover {
+    color: var(--very-dark-cyan);
+    background-color: var(--bright-cyan);
+    transition: .3s ease;
+}
+
+p {
+    font-size: 14px;
+    font-weight: bold;
+}
