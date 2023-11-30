@@ -4,7 +4,6 @@
     justify-content: center;
     min-height: 97vh;
     min-width: 100vw;
-    overflow-x: hidden;
 }
 
 .container {
@@ -13,6 +12,17 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    &-cyan {
+        justify-content: space-between;
+        background-color: var(--very-dark-cyan);
+        padding: 35px 42px 40px 35px;
+        border-radius: 12px;
+    }
 }
 
 .card {
