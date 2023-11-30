@@ -1,0 +1,39 @@
+button {
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    overflow: visible;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    line-height: normal;
+    font-size: 24px;
+    cursor: pointer;
+    transition: .3s ease;
+    &.tip {
+        background-color: var(--very-dark-cyan);
+        color: white;
+        padding: 0 40px;
+        border-radius: 9px;
+        transition: .4s ease;
+        height: 48px;
+    }
+    &.reset {
+        border-radius: 9px;
+        background-color: hsl(183, 79%, 24%);
+        color: hsl(183, 94%, 20%);
+        transition: .3s ease;
+        text-transform: uppercase;
+        padding: 15px 0;
+    }
+    &.active {
+        color: var(--very-dark-cyan);
+        background-color: var(--strong-cyan);
+    }
+    &:hover {
+        color: var(--very-dark-cyan);
+        background-color: var(--bright-cyan);
+        transition: .3s ease;
+    }
+}

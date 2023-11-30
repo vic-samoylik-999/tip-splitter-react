@@ -3,9 +3,6 @@
     align-items: center;
     justify-content: space-between;
     column-gap: 98px;
-    &-mb {
-        margin-bottom: 57px;
-    }
     &__info {
         display: flex;
         justify-content: space-between;
@@ -13,7 +10,6 @@
     }
     &__heading {
         color: var(--very-light-grayish-cyan);
-        margin-bottom: 10px;
     }
     &__text {
         color: var(--grayish-cyan);

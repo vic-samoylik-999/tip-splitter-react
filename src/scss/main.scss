@@ -68,28 +68,6 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
-button {
-    border: none;
-    margin: 0;
-    padding: 0;
-    width: auto;
-    overflow: visible;
-    background: transparent;
-    color: inherit;
-    font: inherit;
-    line-height: normal;
-    font-size: 24px;
-    cursor: pointer;
-    transition: .3s ease;
-}
-
-button:hover,
-button.active:hover {
-    color: var(--very-dark-cyan);
-    background-color: var(--bright-cyan);
-    transition: .3s ease;
-}
-
 p {
     font-size: 14px;
     font-weight: bold;

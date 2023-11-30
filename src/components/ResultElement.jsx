@@ -1,10 +1,8 @@
 import React from 'react';
-import classNames from 'classnames';
 
-function ResultElement({ children, mb }) {
-  const classes = classNames('result', mb && 'result-mb');
+function ResultElement({ children }) {
   return (
-    <section className={classes}>
+    <section className="result">
       <div className="result__info">
         <h3 className="result__heading">{children}</h3>
         <p className="result__text">/person</p>
