@@ -4,6 +4,7 @@ import Column from './components/Column';
 import Input from './components/Input';
 import ResultElement from './components/ResultElement';
 import Button from './components/Button';
+import TipSelector from './components/TipSelector';
 
 import dollarIcon from './assets/icon-dollar.svg';
 import personIcon from './assets/icon-person.svg';
@@ -19,7 +20,7 @@ function App() {
               <Input type="number" placeholder="0.00" rangeMin="1" icon={dollarIcon}>
                 Bill
               </Input>
-              {/* Here Goes Grid of Custom Tips Btns */}
+              <TipSelector />
               <Input type="number" placeholder="0" icon={personIcon} rangeMin="1">
                 Number of People
               </Input>
