@@ -59,8 +59,8 @@ function App() {
             <Column bg="contrast">
               <div className="column-container">
                 <div className="result-wrapper">
-                  <ResultElement tipAmount={tipAmount}>Tip Amount</ResultElement>
-                  <ResultElement total={total}>Total</ResultElement>
+                  <ResultElement value={tipAmount}>Tip Amount</ResultElement>
+                  <ResultElement value={total}>Total</ResultElement>
                 </div>
                 <Button type="reset" onClick={resetAll} className="reset">
                   reset

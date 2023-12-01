@@ -8,8 +8,7 @@ function ResultElement({ children, ...rest }) {
         <p className="result__text">/person</p>
       </div>
       <div className="result__value">
-        {rest.tipAmount && <h2>${Number(rest.tipAmount).toFixed(2)}</h2>}
-        {rest.total && <h2>${Number(rest.total).toFixed(2)}</h2>}
+        <h2>${Number(rest.value).toFixed(2)}</h2>
       </div>
     </section>
   );
