@@ -4,21 +4,16 @@
     justify-content: space-between;
     column-gap: 98px;
     &__info {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
+
     }
     &__heading {
         color: var(--very-light-grayish-cyan);
+        width: 98px;
     }
     &__text {
         color: var(--grayish-cyan);
     }
     &__value {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        column-gap: 98px;
         h2 {
             color: var(--strong-cyan);
             letter-spacing: 0;

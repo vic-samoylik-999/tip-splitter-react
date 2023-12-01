@@ -17,7 +17,7 @@ function App() {
           <Header />
           <main className="card">
             <Column>
-              <Input type="number" placeholder="0.00" rangeMin="1" icon={dollarIcon}>
+              <Input type="number" placeholder="0.00" rangeMin="1" icon={dollarIcon} mb={true}>
                 Bill
               </Input>
               <TipSelector />
@@ -27,7 +27,7 @@ function App() {
             </Column>
             <Column bg="contrast">
               <div className="column-container">
-                <div className="result-info">
+                <div className="result-wrapper">
                   <ResultElement>Tip Amount</ResultElement>
                   <ResultElement>Total</ResultElement>
                 </div>

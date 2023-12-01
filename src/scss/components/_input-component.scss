@@ -1,4 +1,7 @@
 .input {
+    &-mb {
+        margin-bottom: 30px;
+    }
     &__label {
         font-size: 16px;
         font-weight: bold;
@@ -8,7 +11,6 @@
         position: relative;
     }
     &__input {
-        margin-bottom: 40px;
         text-align: right;
         padding: 14px 16px;
         border-radius: 6px;
