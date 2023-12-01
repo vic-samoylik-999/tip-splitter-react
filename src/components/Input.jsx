@@ -21,7 +21,7 @@ function Input({ children, ...rest }) {
           value={rest.value}
           onChange={(e) => handleChange(e)}
           className="input__input"
-          type={rest.type}
+          type="number"
           placeholder={rest.placeholder}
           min={rest.rangeMin}
         />

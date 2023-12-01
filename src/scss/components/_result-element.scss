@@ -2,9 +2,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    column-gap: 98px;
+    gap: 90px;
     &__info {
-
     }
     &__heading {
         color: var(--very-light-grayish-cyan);
