@@ -5,7 +5,7 @@ function TipSelector() {
   const tipTypes = [5, 10, 15, 25, 50];
   return (
     <section className="tip-selector">
-      <h3>Select Tip %</h3>
+      <h3 className='tip-selector__label'>Select Tip %</h3>
       <div className="tip-selector__grid">
         {tipTypes.map((item) => {
           return <Button type="tip">{item + '%'}</Button>;

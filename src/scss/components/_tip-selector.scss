@@ -1,0 +1,25 @@
+.tip-selector {
+    
+    &__label {
+        margin-bottom: 14px;
+    }
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        margin-bottom: 40px;
+    }
+    &__custom-tip {
+        & input {
+            margin: 0;
+            padding: 0;
+            max-width: 120px;
+            border-radius: 9px;
+            text-align: right;
+            height: 48px;
+            padding-right: 13px;    
+        }
+    }
+}
