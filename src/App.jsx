@@ -21,7 +21,7 @@ function App() {
   const [total, setTotal] = React.useState(0.0001);
 
   const resetAll = () => {
-    console.log('shit, here we go agains');
+    console.log('aaah, shit, here we go again...');
     // setBill('');
     // setIsCustomTip(false);
     // setNumPeople('');
@@ -33,11 +33,26 @@ function App() {
           <Header />
           <main className="card">
             <Column>
-              <Input type="number" placeholder="0.00" rangeMin="1" icon={dollarIcon} mb={true}>
+              <Input
+                value={bill}
+                handler={setBill}
+                type="bill"
+                placeholder="0.00"
+                rangeMin="1"
+                icon={dollarIcon}
+                mb={true}
+              >
                 Bill
               </Input>
               <TipSelector />
-              <Input type="number" placeholder="0" icon={personIcon} rangeMin="1">
+              <Input
+                value={numPeople}
+                handler={setNumPeople}
+                type="numPeople"
+                placeholder="0"
+                icon={personIcon}
+                rangeMin="1"
+              >
                 Number of People
               </Input>
             </Column>
@@ -47,9 +62,9 @@ function App() {
                   <ResultElement tipAmount={tipAmount}>Tip Amount</ResultElement>
                   <ResultElement total={total}>Total</ResultElement>
                 </div>
-                <button onClick={resetAll} className="reset">
+                <Button type="reset" onClick={resetAll} className="reset">
                   reset
-                </button>
+                </Button>
               </div>
             </Column>
           </main>

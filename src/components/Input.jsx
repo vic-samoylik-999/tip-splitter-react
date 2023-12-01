@@ -9,11 +9,17 @@ function Input({ children, ...rest }) {
     .split('-')
     .reverse()
     .join(' ');
+
+  const handleChange = (e) => {
+    rest.handler(e.target.value);
+  };
   return (
     <section className={classes}>
       <h3 className="input__label">{children}</h3>
       <div className="input__wrapper">
         <input
+          value={rest.value}
+          onChange={(e) => handleChange(e)}
           className="input__input"
           type={rest.type}
           placeholder={rest.placeholder}
