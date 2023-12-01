@@ -1,3 +1,4 @@
+import React from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Column from './components/Column';
@@ -9,7 +10,22 @@ import TipSelector from './components/TipSelector';
 import dollarIcon from './assets/icon-dollar.svg';
 import personIcon from './assets/icon-person.svg';
 
+// const CalculationContext = React.createContext();
+
 function App() {
+  const [bill, setBill] = React.useState('');
+  const [isCustomTip, setIsCustomTip] = React.useState(false);
+  const [customTipAmount, setCustomTipAmount] = React.useState(0);
+  const [numPeople, setNumPeople] = React.useState('');
+  const [tipAmount, setTipAmount] = React.useState(0.0001);
+  const [total, setTotal] = React.useState(0.0001);
+
+  const resetAll = () => {
+    console.log('shit, here we go agains');
+    // setBill('');
+    // setIsCustomTip(false);
+    // setNumPeople('');
+  };
   return (
     <>
       <div className="wrapper">
@@ -28,10 +44,12 @@ function App() {
             <Column bg="contrast">
               <div className="column-container">
                 <div className="result-wrapper">
-                  <ResultElement>Tip Amount</ResultElement>
-                  <ResultElement>Total</ResultElement>
+                  <ResultElement tipAmount={tipAmount}>Tip Amount</ResultElement>
+                  <ResultElement total={total}>Total</ResultElement>
                 </div>
-                <Button type="reset">reset</Button>
+                <button onClick={resetAll} className="reset">
+                  reset
+                </button>
               </div>
             </Column>
           </main>

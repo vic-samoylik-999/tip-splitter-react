@@ -1,6 +1,6 @@
 import React from 'react';
 
-function ResultElement({ children }) {
+function ResultElement({ children, ...rest }) {
   return (
     <section className="result">
       <div className="result__info">
@@ -8,7 +8,8 @@ function ResultElement({ children }) {
         <p className="result__text">/person</p>
       </div>
       <div className="result__value">
-        <h2>$0.00</h2>
+        {rest.tipAmount && <h2>${Number(rest.tipAmount).toFixed(2)}</h2>}
+        {rest.total && <h2>${Number(rest.total).toFixed(2)}</h2>}
       </div>
     </section>
   );
