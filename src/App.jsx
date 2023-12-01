@@ -56,7 +56,7 @@ function App() {
                 Number of People
               </Input>
             </Column>
-            <Column bg="contrast">
+            <Column bg={true}>
               <div className="column-container">
                 <div className="result-wrapper">
                   <ResultElement value={tipAmount}>Tip Amount</ResultElement>
