@@ -11,7 +11,7 @@ function Input({ children, ...rest }) {
     .join(' ');
 
   const handleChange = (e) => {
-    rest.handler(e.target.value);
+    rest.handler(e.target.value ? e.target.value : '');
   };
   return (
     <section className={classes}>

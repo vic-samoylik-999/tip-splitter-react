@@ -17,14 +17,21 @@ function App() {
   const [isCustomTip, setIsCustomTip] = React.useState(false);
   const [customTipAmount, setCustomTipAmount] = React.useState(0);
   const [numPeople, setNumPeople] = React.useState('');
-  const [tipAmount, setTipAmount] = React.useState(0.0001);
-  const [total, setTotal] = React.useState(0.0001);
+  const [isZeroPeople, setIsZeroPeople] = React.useState(true);
+  const [tipAmount, setTipAmount] = React.useState(0);
+  const [total, setTotal] = React.useState(0);
+
+  React.useEffect(() => {
+    setIsZeroPeople(numPeople >= 1 ? false : true);
+    setTotal(isZeroPeople ? 0 : bill / numPeople);
+    console.log(bill, numPeople, total);
+  }, [bill, numPeople, total, isZeroPeople]);
 
   const resetAll = () => {
     console.log('aaah, shit, here we go again...');
-    // setBill('');
-    // setIsCustomTip(false);
-    // setNumPeople('');
+    setBill('');
+    setIsCustomTip(false);
+    setNumPeople('');
   };
   return (
     <>
