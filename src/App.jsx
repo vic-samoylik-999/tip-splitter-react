@@ -21,6 +21,8 @@ function App() {
   const [tipAmount, setTipAmount] = React.useState(0);
   const [total, setTotal] = React.useState(0);
 
+  console.log(isCustomTip, customTipAmount);
+
   React.useEffect(() => {
     setIsZeroPeople(numPeople >= 1 ? false : true);
     setTotal(isZeroPeople ? 0 : bill / numPeople);
@@ -49,7 +51,12 @@ function App() {
               >
                 Bill
               </Input>
-              <TipSelector />
+              <TipSelector
+                isCustomTip={isCustomTip}
+                customTipAmount={customTipAmount}
+                setIsCustomTip={setIsCustomTip}
+                setCustomTipAmount={setCustomTipAmount}
+              />
               <Input
                 value={numPeople}
                 handler={setNumPeople}
@@ -68,9 +75,9 @@ function App() {
                   <ResultElement value={tipAmount}>Tip Amount</ResultElement>
                   <ResultElement value={total}>Total</ResultElement>
                 </div>
-                <Button type="reset" onClick={resetAll} className="reset">
+                <button type="reset" onClick={resetAll} className="reset">
                   reset
-                </Button>
+                </button>
               </div>
             </Column>
           </main>
