@@ -29,6 +29,8 @@ function App() {
     setBill('');
     setIsCustomTip(false);
     setNumPeople('');
+    setIsCustomTip(false);
+    setCustomTipAmount('');
   };
   return (
     <>
