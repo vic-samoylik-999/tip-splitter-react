@@ -3,9 +3,25 @@
         margin-bottom: 30px;
     }
     &__label {
+        &-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 16px;
+            margin-bottom: 16px;
+        }
         font-size: 16px;
         font-weight: bold;
-        margin-bottom: 14px;
+    }
+    &__error {
+        font-size: 16px;
+        color: var(--error-red);
+        opacity: 0;
+        transition: .3s ease;
+        &-visible {
+            opacity: 1;
+            transition: .3s ease;
+    }
     }
     &__wrapper {
         position: relative;

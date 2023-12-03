@@ -1,7 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
 
-function Input({ children, ...rest }) {
+function Input({ children, isZeroPeople, ...rest }) {
   const classes = classNames('input', rest.mb && 'input-mb');
   const lastIndexBackslash = rest.icon.lastIndexOf('/');
   const altName = rest.icon
@@ -15,7 +15,12 @@ function Input({ children, ...rest }) {
   };
   return (
     <section className={classes}>
-      <h3 className="input__label">{children}</h3>
+      <div className="input__label-wrapper">
+        <h3 className="input__label">{children}</h3>
+        <p className={isZeroPeople ? 'input__error input__error-visible' : 'input__error'}>
+          Can't Be Zero
+        </p>
+      </div>
       <div className="input__wrapper">
         <input
           value={rest.value}

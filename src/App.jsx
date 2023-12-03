@@ -57,6 +57,7 @@ function App() {
                 placeholder="0"
                 icon={personIcon}
                 rangeMin="1"
+                isZeroPeople={isZeroPeople}
               >
                 Number of People
               </Input>

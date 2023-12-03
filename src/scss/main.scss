@@ -52,7 +52,7 @@ input:focus {
 
 input:out-of-range {
     transition: .4s ease;
-    border-color: #D38E82;
+    border-color: var(--error-red);
 }
 
 /* Hiding the arrows of input number */
