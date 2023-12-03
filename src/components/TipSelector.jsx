@@ -6,8 +6,21 @@ function TipSelector(props) {
   const tipTypes = [5, 10, 15, 25, 50];
 
   const customTipClick = (amount) => {
-    props.setIsCustomTip(true);
-    props.setCustomTipAmount(amount);
+    if (props.customTipAmount == amount) {
+      props.setCustomTipAmount('');
+      props.setIsCustomTip(false);
+    } else {
+      props.setIsCustomTip(true);
+      props.setCustomTipAmount(amount);
+    }
+  };
+
+  const customTipHandler = (e) => {
+    if (e.target.value == 0) {
+      props.setIsCustomTip(false);
+      props.setCustomTipAmount('');
+    }
+    props.setCustomTipAmount(Number(e.target.value));
   };
   return (
     <section className="tip-selector">
@@ -27,7 +40,12 @@ function TipSelector(props) {
           );
         })}
         <div className="tip-selector__custom-tip">
-          <input type="number" placeholder="Custom" />
+          <input
+            value={props.customTipAmount}
+            onChange={customTipHandler}
+            type="number"
+            placeholder="Custom"
+          />
         </div>
       </div>
     </section>

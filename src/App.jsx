@@ -15,7 +15,7 @@ import personIcon from './assets/icon-person.svg';
 function App() {
   const [bill, setBill] = React.useState('');
   const [isCustomTip, setIsCustomTip] = React.useState(false);
-  const [customTipAmount, setCustomTipAmount] = React.useState(0);
+  const [customTipAmount, setCustomTipAmount] = React.useState('');
   const [numPeople, setNumPeople] = React.useState('');
   const [isZeroPeople, setIsZeroPeople] = React.useState(true);
   const [tipAmount, setTipAmount] = React.useState(0);
