@@ -4,7 +4,6 @@ import Footer from './components/Footer';
 import Column from './components/Column';
 import Input from './components/Input';
 import ResultElement from './components/ResultElement';
-import Button from './components/Button';
 import TipSelector from './components/TipSelector';
 
 import dollarIcon from './assets/icon-dollar.svg';
@@ -20,8 +19,6 @@ function App() {
   const [isZeroPeople, setIsZeroPeople] = React.useState(true);
   const [tipAmount, setTipAmount] = React.useState(0);
   const [total, setTotal] = React.useState(0);
-
-  console.log(isCustomTip, customTipAmount);
 
   React.useEffect(() => {
     setIsZeroPeople(numPeople >= 1 ? false : true);
@@ -75,7 +72,10 @@ function App() {
                   <ResultElement value={tipAmount}>Tip Amount</ResultElement>
                   <ResultElement value={total}>Total</ResultElement>
                 </div>
-                <button type="reset" onClick={resetAll} className="reset">
+                <button
+                  onClick={resetAll}
+                  className={bill || numPeople || isCustomTip ? 'reset reset-active' : 'reset'}
+                >
                   reset
                 </button>
               </div>
