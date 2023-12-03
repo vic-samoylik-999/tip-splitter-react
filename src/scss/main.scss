@@ -72,3 +72,23 @@ p {
     font-size: 14px;
     font-weight: bold;
 }
+
+button.reset {
+    border-radius: 9px;
+    background-color: hsl(183, 79%, 24%);
+    color: hsl(183, 94%, 20%);
+    transition: .3s ease;
+    text-transform: uppercase;
+    padding: 15px 0;
+    transition: .3s ease;
+    &:hover {
+        color: var(--very-dark-cyan);
+        background-color: var(--bright-cyan);
+        transition: .3s ease;
+    }
+    &-active {
+        color: var(--very-dark-cyan);
+        background-color: var(--strong-cyan);
+        transition: .3s ease;
+    }
+}
