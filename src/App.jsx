@@ -80,7 +80,11 @@ function App() {
                 </div>
                 <button
                   onClick={resetAll}
-                  className={bill || numPeople || isCustomTip ? 'reset reset-active' : 'reset'}
+                  className={
+                    bill || numPeople || isCustomTip || customTipAmount
+                      ? 'reset reset-active'
+                      : 'reset'
+                  }
                 >
                   reset
                 </button>

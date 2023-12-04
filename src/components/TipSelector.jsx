@@ -41,6 +41,7 @@ function TipSelector(props) {
         })}
         <div className="tip-selector__custom-tip">
           <input
+            className="tip-selector__input"
             value={props.customTipAmount}
             onChange={customTipHandler}
             type="number"
