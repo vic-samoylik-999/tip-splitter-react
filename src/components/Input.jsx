@@ -11,7 +11,7 @@ function Input({ children, isZeroPeople, ...rest }) {
     .join(' ');
 
   const handleChange = (e) => {
-    rest.handler(e.target.value ? e.target.value : '');
+    rest.handler(e.target.value ? e.target.value : 0);
   };
   return (
     <section className={classes}>
