@@ -4,6 +4,9 @@
     background-color: var(--very-light-grayish-cyan);
     height: 3vh;
     font-size: 12px;
+    @media (max-width: 560px) {
+        height: auto;
+    }
     &__container {
         max-width: 934px;
         padding: 0 20px 0 0;
@@ -17,8 +20,8 @@
         img {
             width: 14px;
             height: 14px;
-            transform: translateY(2px);
-            animation: pulse 2.5s linear infinite;
+            transform: translateY(4px);
+            animation: pulse 1.5s linear infinite;
         }
     }
     &__link {
@@ -33,20 +36,6 @@
 }
 
 @keyframes pulse {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.1);
-    }
-    70% {
-        transform: scale(1.05);
-
-    }
-    90%{
-        transform: scale(1.1);
-    }
-    100% {
-        transform: scale(1);
-    }
+    from { transform: scale(1.1);}
+    to { transform: scale(1); }
 }

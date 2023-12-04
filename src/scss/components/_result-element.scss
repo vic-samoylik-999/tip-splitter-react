@@ -3,11 +3,17 @@
     align-items: center;
     justify-content: space-between;
     gap: 90px;
+    @media (max-width: 480px) {
+        gap: 40px;
+    }
     &__info {
     }
     &__heading {
         color: var(--very-light-grayish-cyan);
         width: 98px;
+        @media (max-width: 560px) {
+            width: auto;
+        }
     }
     &__text {
         color: var(--grayish-cyan);

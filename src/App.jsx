@@ -23,7 +23,7 @@ function App() {
   React.useEffect(() => {
     const tipsTotal = isCustomTip ? (bill / 100) * customTipAmount : 0;
     const tipsPerPerson = !isZeroPeople && ((bill / 100) * customTipAmount) / numPeople;
-    const totalPerPerson = (+bill + tipsTotal) / numPeople; // divide by numpeople then
+    const totalPerPerson = (+bill + tipsTotal) / numPeople;
     setIsZeroPeople(numPeople > 0 ? false : true);
     setTotal(!isZeroPeople ? totalPerPerson : 0);
     setTipAmount(!isZeroPeople && tipsPerPerson);
