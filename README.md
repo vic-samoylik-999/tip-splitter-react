@@ -1,6 +1,12 @@
 # tip-splitter-react
 
-This is TipSplitter Calculator, the project based on challenge on [Frontend Mentor](https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX)
+This is TipSplitter Calculator, the project based on challenge on [Frontend Mentor](https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX). Made with React, SCSS.
+
+![site-photo](thumb.jpg)
+
+## Deployment
+
+[Vic's Tip Splitter](https://vic-tip-splitter.netlify.app/)
 
 ## Brief
 
