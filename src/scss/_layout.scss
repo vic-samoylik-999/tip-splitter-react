@@ -4,7 +4,7 @@
     justify-content: center;
     min-height: 97vh;
     min-width: 100vw;
-    @media (max-width: 1066px) {
+    @media (max-width: 978px) {
         min-height: auto;
         min-width: auto;
         flex-direction: column;
@@ -12,7 +12,7 @@
 }
 
 .container {
-    max-width: 934px;
+    max-width: 1200px;
     padding: 0 5px;
     display: flex;
     flex-direction: column;
@@ -33,7 +33,7 @@
     background-color: white;
     border-radius: 12px;
     padding: 32px 32px 32px 48px;
-    @media (max-width: 1066px) {
+    @media (max-width: 978px) {
         flex-direction: column;
         row-gap: 30px;
         align-items: center;
@@ -72,7 +72,7 @@
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-    @media (max-width: 1066px) {
+    @media (max-width: 978px) {
         height: auto;
     }
     @media (max-width: 560px) {
