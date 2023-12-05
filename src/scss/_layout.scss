@@ -72,6 +72,9 @@
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
+    @media (max-width: 1066px) {
+        height: auto;
+    }
     @media (max-width: 560px) {
         width: 100%;
     }
