@@ -28,5 +28,9 @@ button {
         color: var(--very-dark-cyan);
         background-color: var(--bright-cyan);
         transition: .3s ease;
+        @media (hover: none) {
+            color: white;
+            background-color: var(--very-dark-cyan);
+        }
     }
 }

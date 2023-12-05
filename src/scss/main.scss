@@ -106,6 +106,10 @@ button.reset {
         color: var(--very-dark-cyan);
         background-color: var(--bright-cyan);
         transition: .3s ease;
+        @media (hover: none) {
+            color: inherit;
+            background-color: hsl(183, 79%, 24%);
+        }
     }
     &-active {
         color: var(--very-dark-cyan);

@@ -31,6 +31,9 @@
         &:hover {
             color: var(--strong-cyan);
             transition: .3s ease;
+            @media (hover: none) {
+                color: inherit;
+            }
         }
     }
 }
